@@ -1,14 +1,10 @@
-var string=document.getElementById("arr")
-var arr=string.innerText.split(',')
+var arr=[11,4,41,50,7,19,8,18,2,6,43,6,20,43,2,23,12,24,31,29]
 
-arr.forEach(function(num,index){
-  arr[index]=parseInt(arr[index])
-})
 
 var sum =arr.reduce(function(accu,curr){
-
    return accu+curr
 })
+
 var mean=sum/arr.length
 
 document.getElementById("mean").innerText= "Mean:"+mean;
