@@ -11,9 +11,13 @@ var sum =arr.reduce(function(accu,curr){
 })
 var mean=sum/arr.length
 
-var show=function(){
+document.getElementById("mean").innerText= "Mean:"+mean;
+document.getElementById("mode").innerText= "Mode: 2,6,43";
+document.getElementById("median").innerText="Median: 18.5";
+
+/* var show=function(mean){
   document.getElementById("mean").innerText= "Mean:"+mean;
   document.getElementById("mode").innerText= "Mode: 2,6,43";
   document.getElementById("median").innerText="Median: 18.5";
 
-}
+} */

@@ -4,26 +4,46 @@
   <p id="mean"></p>
   <p id="mode"></p>
   <p id="median"></p>
-  <button onclick="show()">click here</button>
+
 
   <h1> Explain the .reduce() method</h1>
-  <h3> arr.reduce(function(prev,cur,index,arr){},init)</h3><br><br>
+  <h3> arr.reduce(function(prev,cur,index,arr){},init)</h3>
+  <br><br>
   <h3>.reduce() callback <b>4 things</b><br></h3>
-  <p><b>prev</b>: previous value, an accumulator, tracks the last number that is handled<br><br>
-  <b>cur</b>: current value, the number is now in the function <br><br>
-  <b>index</b>: the index of current value <br><br>
-  <b>arr</b>: the arrays you use <br><br>
-  <br>
+  <p>
+    <b>prev</b>: previous value, an accumulator, tracks the last number that is handled
+    <br><br>
+    <b>cur</b>: current value, the number is now in the function <br><br>
+    <b>index</b>: the index of current value
+    <br><br>
+    <b>arr</b>: the arrays you use
+    <br><br>
+  </p>
   <hr>
-  <h3>.reduce() can <b>2 arguments</b><br></h3><br>
-  <p>one is the function, the other is initial value<br><br>
-  if you don't put initial value there, it will  automatically use arr[0] as the initial value.<br><br></p><hr>
-  <h2> .reduce() method is kind like .forEach(), but does more things</h2><br><br>
-    <h3>var sum =arr.reduce(function(accu,curr){<br>
+  <h3>.reduce() can <b>2 arguments</b></h3>
+  <br>
+  <p>
+    one is the function, the other is initial value
+    <br><br>
+    if you don't put initial value there, it will  automatically use arr[0] as the initial value.
+    <br><br>
+  </p>
+  <hr>
+  <h2> .reduce() method is kind like .forEach(), but does more things</h2>
+  <p>It will go though all value in the assays as current value</p>
+  <h3>var sum =arr.reduce(function(accu,curr){<br>
        return accu+curr<br>
-    })</h3><br>
-    <p> this is how I culculate the sum of the arrays in js. In the function, I return <b>'accu+curr'</b> , in the next term, <b>"accu+curr"</b> becomes <b>next accu</b>, it will keep adding the next number in the arrays untill the last one</p>
-    <p>Finally, using sum/arr.length I get the mean.</p>
+    })
+  </h3>
+    <p>
+      this is how I culculate the sum of the arrays in js. In the function, I return
+      <b>'accu+curr'</b>
+      , in the next term,
+      <b>"accu+curr"</b>
+      becomes <b>next accu</b>
+      , it will keep adding the next number in the arrays untill the last one</p>
+      <br>
+    <p>Finally, using <b>sum/arr.length</b> I get the mean.</p>
 
 
 
